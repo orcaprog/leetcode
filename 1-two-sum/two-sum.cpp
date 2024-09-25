@@ -1,32 +1,23 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        
-            vector<int>::iterator it;
-            vector<int>::iterator itt;
-            vector<int> result;
-            it = nums.begin();
-
-            while(it!= nums.end())
+            map<int,int> mp;
+            vector<int> vec;
+            int deff;
+            for (int i = 0; i < nums.size(); ++i)
             {
-                itt = nums.begin();
-                while(itt != nums.end())
+                int num = nums[i];
+                deff = target - num;
+                auto it = mp.find(deff) ;
+                if(it != mp.end())
                 {
-                    if(itt != it)
-                    {
-                        if((*itt + *it) == target)
-                        {
-                            result.push_back(it - nums.begin() );
-                            result.push_back(itt -nums.begin());
-                            return result;
-                        }
-                    
-                    }  
-                      itt++;
+                    vec.push_back(it->second);
+                    vec.push_back(i);
+                    return vec;
                 }
-                it++;
+                mp[num] = i;
             }
-            return result;
+            return vec;
        
     }
 };
