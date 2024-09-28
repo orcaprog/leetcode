@@ -18,6 +18,5 @@ public:
                 mp[num] = i;
             }
             return vec;
-       
     }
 };
