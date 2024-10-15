@@ -102,7 +102,7 @@ graph TD
     end
 
     Input --> Map[Step 2: Fill frequency map]
-    
+
     subgraph Map[Frequency Map]
         B1[1 -> Count: 3]
         B2[2 -> Count: 2]
@@ -120,9 +120,10 @@ graph TD
     Group --> Extract[Step 4: Extract top k frequent numbers]
 
     subgraph Extract[Extract Top k]
-        Res1[res.push_back(1)] --> Res2[res.push_back(2)]
-        Res2 --> FinalResult[res = [1, 2]]
+        Res1[Add 1 to result] --> Res2[Add 2 to result]
+        Res2 --> FinalResult[Final result: 1 and 2]
     end
+
 ```
 
 ### Final Corrections:
