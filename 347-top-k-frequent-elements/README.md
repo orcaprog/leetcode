@@ -89,7 +89,7 @@ graph TD
     end
 
 ```
-
+result is the vector or list who we hold all numbers with thier Frequency
 
 ### Full Process Flow:
 
