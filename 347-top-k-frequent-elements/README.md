@@ -82,12 +82,14 @@ graph TD
         V2[Frequency: 2] --> N2[Number: 2]
         V1[Frequency: 1] --> N3[Number: 3]
 
-        N1 --> R1[Add 1 to result]
-        N2 --> R2[Add 2 to result]
+        N1 --> R1[Add number 1 to result]
+        N2 --> R2[Add number 2 to result]
         
-        R1 --> Final_Result[Result = [1, 2]]
+        R1 --> Final_Result[Final result: 1 and 2]
     end
+
 ```
+
 
 ### Full Process Flow:
 
