@@ -131,7 +131,6 @@ graph TD
 - We ensured all steps flow logically, connecting the **input** to the process of building the frequency map, grouping by frequency, and finally extracting the top `k` elements.
 - Each Mermaid diagram now clearly represents the algorithm's steps, making the overall explanation and visuals cohesive.
 
-Does this work for you, or would you like any further adjustments?
 
 
 
