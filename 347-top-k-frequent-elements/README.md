@@ -82,10 +82,10 @@ graph TD
         V2[Frequency: 2] --> N2[Number: 2]
         V1[Frequency: 1] --> N3[Number: 3]
 
-        N1 --> R1[res.push_back(1)]
-        N2 --> R2[res.push_back(2)]
+        N1 --> R1[Add 1 to result]
+        N2 --> R2[Add 2 to result]
         
-        R1 --> Final_Result[res = [1, 2]]
+        R1 --> Final_Result[Result = [1, 2]]
     end
 ```
 
