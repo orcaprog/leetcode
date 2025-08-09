@@ -3,8 +3,9 @@
  */
 var createHelloWorld = function() {
     
-    const f = (...args)=>"Hello World";
-    return f
+    return function(...args) {
+        return ("Hello World")
+    }
 };
 
 /**
